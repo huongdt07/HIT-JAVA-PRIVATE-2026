@@ -1,4 +1,4 @@
-package model;
+package src.model;
 
 public class Product {
     private String id;
@@ -41,8 +41,12 @@ public class Product {
         this.stock = stock;
     }
 
+    public boolean isExpensive() {
+        return price > 10000;
+    }
+
     @Override
     public String toString() {
-        return id + " | " + name + " | " + price + " | tồn: " + stock;
+        return id + " | " + name + " | " + price + " | Tồn kho: " + stock;
     }
 }

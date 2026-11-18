@@ -1,5 +1,4 @@
-
-package model;
+package src.model;
 
 public class Customer {
     private String id;
