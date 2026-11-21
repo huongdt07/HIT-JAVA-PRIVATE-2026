@@ -1,6 +1,5 @@
 package org.example;
 
-
 public class SalesEmployee extends Employee {
     private double sales;
 
@@ -11,7 +10,7 @@ public class SalesEmployee extends Employee {
 
     @Override
     public double getMonthlyIncome() {
-        return BaseSalary() + sales * 0.05;
+        return getBaseSalary() + sales * 0.05;
     }
 }
 
